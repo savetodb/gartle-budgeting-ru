@@ -1,0 +1,143 @@
+USE master;
+GO
+
+CREATE LOGIN ba_accountant_01 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_accountant_02 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_admin_01 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_admin_02 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_analyst_01 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_analyst_02 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_developer_01 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_developer_02 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_user_101 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_user_102 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_user_201 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_user_202 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_user_301 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_user_302 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_user_401 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+CREATE LOGIN ba_user_402 WITH PASSWORD=N'Usr_2011#_Xls4168';
+GO
+
+
+CREATE USER ba_accountant_01 FOR LOGIN ba_accountant_01 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_accountant_02 FOR LOGIN ba_accountant_02 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_admin_01 FOR LOGIN ba_admin_01 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_admin_02 FOR LOGIN ba_admin_02 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_analyst_01 FOR LOGIN ba_analyst_01 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_analyst_02 FOR LOGIN ba_analyst_02 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_developer_01 FOR LOGIN ba_developer_01 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_developer_02 FOR LOGIN ba_developer_02 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_user_101 FOR LOGIN ba_user_101 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_user_102 FOR LOGIN ba_user_102 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_user_201 FOR LOGIN ba_user_201 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_user_202 FOR LOGIN ba_user_202 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_user_301 FOR LOGIN ba_user_301 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_user_302 FOR LOGIN ba_user_302 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_user_401 FOR LOGIN ba_user_401 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+CREATE USER ba_user_402 FOR LOGIN ba_user_402 WITH DEFAULT_SCHEMA=dbo;
+GO
+
+
+-- The example workbooks use these logins and passwords
+-- We recommend leaving the logins and passwords as is
+
+-- Use this code to disable logins later
+
+ALTER LOGIN ba_accountant_01  DISABLE;
+ALTER LOGIN ba_admin_01       DISABLE;
+ALTER LOGIN ba_analyst_01     DISABLE;
+ALTER LOGIN ba_developer_01   DISABLE;
+ALTER LOGIN ba_user_101       DISABLE;
+ALTER LOGIN ba_user_201       DISABLE;
+ALTER LOGIN ba_user_301       DISABLE;
+ALTER LOGIN ba_user_401       DISABLE;
+
+ALTER LOGIN ba_accountant_02  DISABLE;
+ALTER LOGIN ba_admin_02       DISABLE;
+ALTER LOGIN ba_analyst_02     DISABLE;
+ALTER LOGIN ba_developer_02   DISABLE;
+ALTER LOGIN ba_user_102       DISABLE;
+ALTER LOGIN ba_user_202       DISABLE;
+ALTER LOGIN ba_user_302       DISABLE;
+ALTER LOGIN ba_user_402       DISABLE;
+
+-- Use this code to enable logins
+
+ALTER LOGIN ba_accountant_01  ENABLE;
+ALTER LOGIN ba_admin_01       ENABLE;
+ALTER LOGIN ba_analyst_01     ENABLE;
+ALTER LOGIN ba_developer_01   ENABLE;
+ALTER LOGIN ba_user_101       ENABLE;
+ALTER LOGIN ba_user_201       ENABLE;
+ALTER LOGIN ba_user_301       ENABLE;
+ALTER LOGIN ba_user_401       ENABLE;
+
+ALTER LOGIN ba_accountant_02  ENABLE;
+ALTER LOGIN ba_admin_02       ENABLE;
+ALTER LOGIN ba_analyst_02     ENABLE;
+ALTER LOGIN ba_developer_02   ENABLE;
+ALTER LOGIN ba_user_102       ENABLE;
+ALTER LOGIN ba_user_202       ENABLE;
+ALTER LOGIN ba_user_302       ENABLE;
+ALTER LOGIN ba_user_402       ENABLE;
